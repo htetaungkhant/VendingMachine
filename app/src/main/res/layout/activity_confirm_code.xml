@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    tools:context="com.example.user.vendingmachine.SignupActivity">
+
+    <LinearLayout
+        android:id="@+id/panel1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etConfirmCode"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_field_design"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="####"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="@color/colorBlack"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColorHint="@color/colorGray2"
+            android:textCursorDrawable="@null"
+            android:letterSpacing="0.5"
+            android:maxLength="4"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmation code has been sent to your email."
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Confirm"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/for_login_button"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

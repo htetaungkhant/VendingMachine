@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.vendingmachine.RedeemActivity"
+    android:background="@color/colorGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etRedeem"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Enter Redeem Code"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textColorHint="@color/colorGray2"
+            android:background="@drawable/edit_text_field_design"
+            android:textColor="@color/colorBlack"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:maxLength="15"
+            android:letterSpacing="0.2"/>
+
+        <TextView
+            android:id="@+id/tvRedeemCodeError"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorRed"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnRedeem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redeem"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/for_login_button"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
